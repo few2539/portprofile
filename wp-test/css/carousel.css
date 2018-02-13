@@ -1,0 +1,89 @@
+
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #66CC99;
+    border-color: #66CC99;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.fewc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+   
+    border: 2px solid;
+    padding: 1.5em;
+    
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.fewc h1 {
+    font-size: 4em;    
+    
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .fewc {
+    opacity: 0;
+    -webkit-transition: 1.5s all ease-in-out .1s;
+       -moz-transition: 1.5s all ease-in-out .1s; 
+        -ms-transition: 1.5s all ease-in-out .1s; 
+         -o-transition: 1.5s all ease-in-out .1s; 
+            transition: 1.5s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .fewc {
+    opacity: 1;
+    -webkit-transition: 1.5s all ease-in-out .1s;
+       -moz-transition: 1.5s all ease-in-out .1s; 
+        -ms-transition: 1.5s all ease-in-out .1s; 
+         -o-transition: 1.5s all ease-in-out .1s; 
+            transition: 1.5s all ease-in-out .1s;    
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+
+
+/********************************/
+/*          Custom Buttons      */
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .fewc { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .fewc h1 { font-size: 4em; }    
+}

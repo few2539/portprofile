@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Camp</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!--link css from CDN bootstrap-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <!--custom css here!!--> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/loginin.css">
+    <link rel="stylesheet" href="css/rerere.css">
+    <link rel="stylesheet" href="css/textfade.css">
+    
+  <link rel="stylesheet" type="text/css" href="css/moveslide.css">
+    <script src="wp-test/js/activemenu.js" ></script>
+
+    
+<script>
+
+
+
+// Get the modal
+var modal = document.getElementById('id01');
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+</head>
+
+<body style="font-family: Raleway">
+<!--NAV-->
+
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top affix navbar-inverse">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#myCarousel"><b>CMM</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#myCarousel" style="font-size: 1.3em;">Home</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#page2" style="font-size: 1.3em;">About</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#page3" style="font-size: 1.3em;">Activity</a>
+                    </li>
+                    <li class="">
+                        <a class="page-scroll" href="#page4" style="font-size: 1.3em;">Team</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page5" style="font-size: 1.3em;">Contact</a>
+                    </li>
+                    <li>   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="btn btn-danger ">Login</button>
+
+<div id="id01" class="modal"  >
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+     
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname"  required>
+      <br>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="a" type="submit" style="text-align: center;">Login</button><br>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1; width: 80%; margin-left: 0">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div></li>
+
+</li> 
+  <!-- REGISTER-->
+  <li style="margin-left: 0.5em;"> <button class="btn btn-success" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+
+<div id="id02" class="modal">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+
+  <form class="modal-content animate" action="/action_page.php">
+  <div class="container">
+      <div class="row main">
+        <div class="panel-heading">
+                 <div class="panel-title ">
+                    <h1 class="title" style="margin-left: 0">.:: Multi Camp & KMUTT::.</h1>
+                    <hr />
+                  </div>
+              </div> 
+    <div class="container">
+
+      <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Your Email" name="email" required>
+<br>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Your Password" name="psw" required>
+<br>
+      <label><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      <br>
+      <input type="checkbox" checked="checked"> Remember me
+      <p>By creating Phuridate <a href="https://web.facebook.com/phuridate.tepnarong">My facebook</a>.</p>
+
+      <div class="clearfix" style="width: 50%">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="btn-danger">Cancel</button>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<!--..................................................................................................-->
+<!--start here-->
+<section id="#page1">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+          <div class="fewc">
+        <hgroup>
+            <h1>MULTIMEDIA CAMP</h1>        
+            <h3>KING MONGKUT'S UNIVERSITY OF TECHONOLOGY THONBURI</h3>
+               <span class="glyphicon glyphicon-education " style="height: 2em;"></span>
+        </hgroup>
+       
+      </div>
+        <img src="imgs/hder1.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+         <div class="fewc">
+        <hgroup>
+            <h1>WHERE YOU LAUGH & LEARN </h1>        
+            <h3>KING MONGKUT'S UNIVERSITY OF TECHONOLOGY THONBURI</h3>
+               <span class="glyphicon glyphicon-music " style="height: 2em;"></span>
+        </hgroup>
+      </div>
+        <img src="imgs/hder2.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+       <div class="fewc">
+       <hgroup>
+            <h1>ADORABLE FRIEND & SENIOR</h1>        
+            <h3>KING MONGKUT'S UNIVERSITY OF TECHONOLOGY THONBURI</h3>
+               <span class="glyphicon glyphicon-heart " style="height: 2em;"></span>
+        </hgroup>
+        </div>
+        <img src="imgs/hder3.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</section>
+
+
+<!--................................................................................................-->
+
+<!--convince-->
+<section  id="page2" class="bg-primary" style="background-color: #d6450f; padding: 35px;" >
+<div class="container">
+<div class="row">
+<div class="col-xd-8 text-center ">
+<br><br>
+<h2 class="section-heading"><b>Why should you come HERE ?</b></h2>
+<hr class="light" style=" width: 5em;">
+<p class="text1">
+  There is a lot of fun waiting for everyone who is interested in GRAPHIC 
+  & PROGRAMMERING includ  PRODUCTION / PHOTO / DRAWING .  you will get a lot of knowledge and good
+  memory from this camp .
+</p>
+ <br>
+  <a href="#page22" class="page-scroll btn btn-xl" style="border: 1em; font-size: 1.5em; background-color: #fec503; border color: #fed136; color: #FFFFFF;   "  >Tell Me More</a>
+  
+  <br>
+</div>
+  
+</div>
+  
+</div>
+</section>
+
+
+<section id=page22  style="background-color: #FFFFFF;">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h2><b> KNOWLEDGE </b></h2>
+<h3> All of them you will get in this camp.</h3>
+<hr class="primary" style="border-color: #000000; width: 5em;">
+  <br>
+</div>
+
+<div class="row text-center">
+
+<div class="col-lg-4"  >
+
+<img src="imgs/tools-and-utensils.png " width="70em;" height="70em;" >
+<h2><b> Programming</b></h2>
+<h3>C# , C++</h3>
+<h3>java</h3>
+<h3>Website creating</h3>
+<h3>Appication</h3>
+</div>
+
+ <div class="col-lg-4"   > 
+
+<img src="imgs/graphic-design.png " width="70em;" height="70em;"  >
+<h2><b>  Graphic design</b> </h2>
+<h3>Photoshop</h3>
+<h3>illustrator</h3>
+<h3>After Effect</h3>
+<h3>Flash / MAYA / etc.</h3><br>
+
+</div>
+<div class="col-lg-4"   > 
+
+<img src="imgs/clapperboard.png" width="70em;" height="70em;"  >
+<h2> <b> Production</b> </h2>
+<h3>Taking Photo</h3><h3>Movie</h3><h3>Drawing</h3>
+<h3>etc.</h3>
+
+</div>
+
+</div>
+<div style="text-align: center;">
+  <h3>Moreover, you will not only meet new friends but also get an unforgettable experience of your life time !</h3>
+  </div>
+</div>
+  
+</section>
+<!--...............................................................................................-->
+<section id="page3">
+  <section class="gotopic" id="gotopic" style="background: url(imgs/pexels-photo-195280.jpeg); color: #FFFFFF; background-size: cover; padding: 100px 0;">
+<div class="container">
+<div class="row">
+<div class="col-lg-6">
+<div style=" border: 1px solid white;  width: 280px; padding: 2em; margin:2em;">
+<h2>Activity</h2>
+<h3>We Have DONE.</h3>
+<a class="btn btn-page scroll" href="#sss" style="border-color: #FFFFFF; border-radius: 300px;  color: #FFFFFF; ">Let's See</a>
+ </div> 
+</div>
+  
+</div>
+  
+</div>
+  
+</section>
+
+<!--picture-->
+
+
+<!--popup gl-->
+    <!-- 
+  
+  -->
+      <!-- 
+    Please note, that you can apply .m--global-blending-active to .fnc-slider 
+    to enable blend-mode for all background-images or apply .m--blend-bg-active
+  to some specific slides (.fnc-slide). It's disabled by default in this demo,
+  because it requires specific images, where more than 50% of bg is transparent or monotone
+  -->
+      <!-- 
+  Please note, that you can apply .m--global-blending-active to .fnc-slider 
+  to enable blend-mode for all background-images or apply .m--blend-bg-active
+  to some specific slides (.fnc-slide). It's disabled by default in this demo,
+  because it requires specific images, where more than 50% of bg is transparent or monotone
+  -->
+  <section id="sss"></section>
+  <div class="demo-cont">
+    <!-- slider start -->
+    <div class="fnc-slider example-slider">
+    <div class="fnc-slider__slides">
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-green m--active-slide">
+      <div class="fnc-slide__inner">
+        <div class="fnc-slide__mask">
+        <div class="fnc-slide__mask-inner"></div>
+        </div>
+        <div class="fnc-slide__content">
+        <h2 class="fnc-slide__heading">
+          <div class="fnc-slide__heading-line">
+          <span>let 's fun</span>
+          </div>
+          <div class="fnc-slide__heading-line">
+          <span>Together</span>
+          </div>
+        </h2>
+        
+        </div>
+      </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-dark">
+      <div class="fnc-slide__inner">
+        <div class="fnc-slide__mask">
+        <div class="fnc-slide__mask-inner"></div>
+        </div>
+        <div class="fnc-slide__content">
+        <h2 class="fnc-slide__heading">
+          <div class="fnc-slide__heading-line">
+          <span>New</span>
+          </div>
+          <div class="fnc-slide__heading-line">
+          <span>Friends</span>
+          </div>
+        </h2>
+        
+        </div>
+      </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-red">
+      <div class="fnc-slide__inner">
+        <div class="fnc-slide__mask">
+        <div class="fnc-slide__mask-inner"></div>
+        </div>
+        <div class="fnc-slide__content">
+        <h2 class="fnc-slide__heading">
+          <div class="fnc-slide__heading-line">
+          <span>Get </span>
+          </div>
+          <div class="fnc-slide__heading-line">
+          <span>knowledge</span>
+          </div>
+        </h2>
+        
+        </div>
+      </div>
+      </div>
+      <!-- slide end -->
+      <!-- slide start -->
+      <div class="fnc-slide m--blend-blue">
+      <div class="fnc-slide__inner">
+        <div class="fnc-slide__mask">
+        <div class="fnc-slide__mask-inner"></div>
+        </div>
+        <div class="fnc-slide__content">
+        <h2 class="fnc-slide__heading">
+          <div class="fnc-slide__heading-line">
+          <span>Memorable</span>
+          </div>
+          <div class="fnc-slide__heading-line">
+          <span>Moment</span>
+          </div>
+        </h2>
+        
+        </div>
+      </div>
+      </div>
+      <!-- slide end -->
+    </div>
+    <nav class="fnc-nav">
+      <div class="fnc-nav__bgs">
+      <div class="fnc-nav__bg m--navbg-green m--active-nav-bg"></div>
+      <div class="fnc-nav__bg m--navbg-dark"></div>
+      <div class="fnc-nav__bg m--navbg-red"></div>
+      <div class="fnc-nav__bg m--navbg-blue"></div>
+      </div>
+      <div class="fnc-nav__controls">
+      <button class="fnc-nav__control">
+        1
+        <span class="fnc-nav__control-progress"></span>
+      </button>
+      <button class="fnc-nav__control">
+        2
+        <span class="fnc-nav__control-progress"></span>
+      </button>
+      <button class="fnc-nav__control">
+        3
+        <span class="fnc-nav__control-progress"></span>
+      </button>
+      <button class="fnc-nav__control">
+        4
+        <span class="fnc-nav__control-progress"></span>
+      </button>
+      </div>
+    </nav>
+    </div>
+    <!-- slider end -->
+   
+</section>
+
+<!--..............................................................................................-->
+
+
+  
+<section id="page4" class="bg-light-gray" style="background-color: #DCDCDC; padding: 35px;" >
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12 text-center">
+  <br><br>
+  <h2 class="section-heading"><b>OUR FABULOUS TEAM</b> </h2>
+  <h3 class="section-subheading text-mute">Good Game Well Play.</h3>
+    <br><br>
+  </div>
+            
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member text-center" >
+                        <img src="imgs/p11.jpg" class="img-responsive img-circle"  height="50px;"  style="margin: 0 auto;">
+                        <h4>Jessada Preprasat</h4>
+                        <p class="text-muted">Super Advisor</p>
+                        <a href="https://web.facebook.com/jeddabahbah" target="_blank"><img src="imgs/face.png" style="margin: 0 auto;"  ></a>
+
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member text-center" >
+                        <img src="imgs/p33.jpg" class="img-respo    border: 7px solid #fff;nsive img-circle" alt="" style="margin: 0 auto;">
+                        <h4>Phuridate Thepnarong</h4>
+                        <p class="text-muted">Developer</p>
+                        <a href="https://web.facebook.com/phuridate.tepnarong?_rdc=1&_rdr" target="_blank"><img src="imgs/face.png" style="margin: 0 auto;"  ></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member text-center" >
+                        <img src="imgs/p22.jpg" class="img-responsive img-circle" alt="" style="margin: 0 auto;">
+                        <h4>Ekapot Suangmon</h4>
+                        <p class="text-muted">Super Advisor</p>
+                        <a href="https://web.facebook.com/akegvd" target="_blank"><img src="imgs/face.png" style="margin: 0 auto;"  ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                
+                    <p class="large text-muted">king mongkut's university of technology thonburi</p>
+                    
+                </div>
+            </div>
+        </div>
+   
+</section>
+
+<section id="page5">
+  <div class="row-fluid">
+        <div class="span8">
+          <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62036.48998032484!2d100.50518899394494!3d13.640686205738119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a251bb6b0cf1%3A0xf656e94ff13324ad!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Lie4Lij4Liw4LiI4Lit4Lih4LmA4LiB4Lil4LmJ4Liy4LiY4LiZ4Lia4Li44Lij4Li1!5e0!3m2!1sth!2sth!4v1499528976678"></iframe>
+      </div>
+      
+        
+    </div>
+
+
+</section>  
+<section id="cmmwhere" class="bg-primary" style="background-color: #000;">
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12 text-center">
+ <p> สาขาวิชาคอมพิวเตอร์และเทคโนโลยีสารสนเทศ
+มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+126 ถ. ประชาอุทิศ แขวงบางมด เขตทุ่งครุ กรุงเทพฯ 10140<p>
+โทร +66 (0) 2470-8500 ,
+โทรสาร +66 (0) 2470-8500
+e-mail: sit.comit@kmutt.ac.th
+<br><br>
+    <a href="https://web.facebook.com/CMM.KMUTT/" target="_blank"><img src="imgs/face1.png" style="margin: 0 auto;"  ></a>
+  </div>
+    
+  </div>
+    
+  </div>
+</section>
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>   
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+<script src="js/fewspider.js"></script>
+
+</body>
+</html>

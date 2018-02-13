@@ -1,0 +1,30 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    background-color: grey;
+   
+  
+}
+#page2 {
+    background-image: url(images/portfolio-bg.png);
+   
+}
+#page3 {
+    background-color: blue;
+    
+}
+#page4 {
+    background-color: red;
+ 
+}
+.text1{
+    font-size: 1.8em;
+   
+   
+   
+}

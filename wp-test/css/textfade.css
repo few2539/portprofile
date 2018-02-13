@@ -1,0 +1,17 @@
+.carousel  .carousel-inner .item .fewc {
+    opacity: 0;
+    -webkit-transition: 1.5s all ease-in-out .1s;
+       -moz-transition: 1.5s all ease-in-out .1s; 
+        -ms-transition: 1.5s all ease-in-out .1s; 
+         -o-transition: 1.5s all ease-in-out .1s; 
+            transition: 1.5s all ease-in-out .1s; 
+}
+.carousel  .carousel-inner .item.active .fewc {
+    opacity: 1;
+    -webkit-transition: 1.5s all ease-in-out .1s;
+       -moz-transition: 1.5s all ease-in-out .1s; 
+        -ms-transition: 1.5s all ease-in-out .1s; 
+         -o-transition: 1.5s all ease-in-out .1s; 
+            transition: 1.5s all ease-in-out .1s;    
+}
+
