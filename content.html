@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>5555</title>
+  <link rel="shortcut icon" type="image/png" href="image/logogo.png"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/css.css">
+
+</head>
+
+
+<body>
+  <nav class="navigation" id="mainNav">
+    <a class="navigation__link" href="#1">Back to top</a>
+    <a class="navigation__link" href="#2">Section 2</a>
+    <a class="navigation__link" href="#3">Section 3</a>
+    <a class="navigation__link" href="#4">Section 4</a>
+  </nav>
+
+  <div class="page-section hero" id="1">
+    <h1>fewfewfew</h1>
+    <h1>&darr;</h1>
+  </div>
+  <div class="page-section" id="2">
+    <h1>Section Two</h1>
+  </div>
+
+  
+
+  <div class="page-section" id="3">
+    <h1>Section Three</h1>
+    <div class="sh-filter" id="filter-7c965475e86778586eb3f5c5f5821836">
+      <span class="sh-filter-item" data-filter="*">
+          <div class="sh-filter-item-content">all</div>
+      </span>
+      <span class="sh-filter-item" data-filter=".art">
+        <div class="sh-filter-item-content">Art</div>
+      </span>
+      <span class="sh-filter-item" data-filter=".Commercial">
+        <div class="sh-filter-item-content">Commercial</div>
+      </span>
+      <span class="sh-filter-item" data-filter=".Design">
+        <div class="sh-filter-item-content">Design</div>
+      </span>
+      <span class="sh-filter-item" data-filter=".Misc">
+        <div class="sh-filter-item-content">Misc</div>
+      </span>
+      <span class="sh-filter-item" data-filter=".Photography">
+        <div class="sh-filter-item-content">Photography</div>
+      </span>
+    </div>
+
+    <div class="cate" style="color: red;">
+      <div class="item art">art</div>
+      <div class="item Design">Design</div>
+      <div class="item Commercial">Commercial</div>
+      <div class="item Misc">Misc</div>
+      <div class="item Photography">Photography</div>
+    </div>
+  </div>
+
+
+  
+  <div class="page-section" id="4">
+    <h1>Section Four</h1>
+  </div>
+
+
+
+  <!-- js HERE -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+  <script src="js/jsusethis.js"></script>
+  <script>
+  $("this").not("."+selectedClass).removeClass('active-btn');
+      // $("#portfolio").fadeTo(50, 0.1);
+	    $("#portfolio .product-item").not("."+selectedClass).fadeOut().removeClass('scale-anm');
+      setTimeout(function() {
+        $("."+selectedClass).fadeIn().addClass('scale-anm');
+        $("#portfolio").fadeTo(300, 1);
+      }, 300);
+  </script>
+</body>
+
+</html>

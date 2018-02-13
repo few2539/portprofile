@@ -1,0 +1,36 @@
+
+.loader {
+  
+  color: #f0f0f0;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  font-weight: bold;
+  font-size: 8vh;
+  opacity: 1;
+ 
+}
+.loader span1 {
+ 
+  display: inline-block;
+  -webkit-animation: pulse 0.4s alternate infinite ease-in-out;
+          animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loader span1:nth-child(odd) {
+  
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+@-webkit-keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+@keyframes pulse {
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
